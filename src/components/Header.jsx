@@ -38,11 +38,9 @@ const Header = () => {
             </div>
         </div>
         <div className='flex flex-col absolute right-0 left-0 top-[50%] w-full  justify-center items-center gap-2'>
-            <h1 className='text-5xl text-center font-semibold max'>Hi! I'm Adejare Muibi</h1>
+            <h1 className='text-5xl text-center font-semibold max'>Hi! I&apos;m Adejare Muibi</h1>
             <h1 className='text-5xl text-center font-semibold'>A Frontend Developer</h1>
-        </div>
-        
-        
+        </div>  
     </div>
   )
 }

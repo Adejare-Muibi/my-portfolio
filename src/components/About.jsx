@@ -30,8 +30,8 @@ const About = () => {
           <div className='flex flex-col gap-5 max-md:items-center'>
             <h1 className='text-[45px] font-bold'>About Me</h1>
             <h2 className='w-[40vw] max-md:w-[84vw]'>
-              I'm an ambitious, enthutiastic and passionate website developer with a love for creating responsive, user-friendly interfaces. With a year experience in the field, I've honed my skills in HTML, CSS,
-              JavaScript, React and Next. I'm always excited to collaborate on projects that challenge me and allow me to grow as a developer. Let's connect and explore opportunities to work together.
+              I&apos;m an ambitious, enthutiastic and passionate website developer with a love for creating responsive, user-friendly interfaces. With a year experience in the field, I&apos;ve honed my skills in HTML, CSS,
+              JavaScript, React and Next. I&apos;m always excited to collaborate on projects that challenge me and allow me to grow as a developer. Let&apos;s connect and explore opportunities to work together.
             </h2>
           </div>
           <div className='flex flex-col gap-8 max-md:w-[] max-md:items-center'>
@@ -68,7 +68,7 @@ const About = () => {
           </div>
         </div>
         <div>
-          <Image className='rounded-[10px]' src={"/convo.jpg"} height={50} width={300} />
+          <Image className='rounded-[10px]' src={"/convo.jpg"} height={50} width={300} alt='me' />
         </div>
       </div>
       <div className='flex gap-5 max-md:flex-col justify-center max-md:items-center' data-aos="fade-left">

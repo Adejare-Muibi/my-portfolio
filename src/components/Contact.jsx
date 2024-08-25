@@ -53,7 +53,7 @@ const Contact = () => {
         <div className='flex flex-col gap-10 items-center justify-center' id='hire'>
             <div className='flex flex-col gap-3 items-center'>
                 <p className='font-bold text-[24px] text-[#96BB7C]'>SEND ME AN EMAIL</p>
-                <p className='font-bold text-[16px]'>I'M VERY RESPONSIVE TO MESSAGES</p>
+                <p className='font-bold text-[16px]'>I&apos;m VERY RESPONSIVE TO MESSAGES</p>
             </div>
             <form 
                 action="https://forms-io.onrender.com/submit-form/fa7acc2b-1f65-4cae-a57d-5d4e4c1b4656"
