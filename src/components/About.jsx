@@ -25,7 +25,7 @@ const About = () => {
 
   return (
     <div  id='about' className='flex bg-[#222222] flex-col gap-24 max-md:gap-[30px] justify-center items-center text-white w-[100%] max-md:overflow-x-hidden'>
-      <div className='flex justify-around bg-[#2b2929] py-[50px] max-md:gap-[50px] max-md:justify-center items-center max-md:flex-col w-full max-md:overflow-x-hidden' data-aos="zoom-in">
+      <div className='flex justify-around bg-[#2b2929] py-[50px] max-md:gap-[50px] max-md:justify-center items-center max-md:flex-col w-full max-md:overflow-x-hidden' data-aos="fade-up">
       <div className='flex flex-col gap-4'>
           <div className='flex flex-col gap-5 max-md:items-center'>
             <h1 className='text-[45px] font-bold'>About Me</h1>
