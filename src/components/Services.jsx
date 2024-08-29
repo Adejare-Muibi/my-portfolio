@@ -20,7 +20,7 @@ useEffect(() => {
     }, []);
 
   return (
-    <div className='flex flex-col justify-center items-center py-[30px] w-full' data-aos="flip-right">
+    <div className='flex flex-col justify-center items-center py-[30px] w-full max-md:overflow-x-hidden' data-aos="flip-right">
         <div className='flex flex-col justify-center max-md:items-center gap-12'>
             <div>
                 <h1 className='font-bold text-[45px] text-white'>Services</h1>

@@ -11,7 +11,7 @@ const Header = () => {
     <div className='flex gap-60 justify-center text-white max-md: h-[100vh] flex-col bg-[url("/photo2.jpg")] bg-cover bg-no-repeat'>
         <div className='bg-black bg-opacity-50 h-[100vh]'></div>
         <div className='flex bg-black fixed z-10 w-full top-0 justify-around max-md:flex-col max-md:items-center max-md:justify-center pt-2'>
-            <h1 className='text-[25px]'>DiamondRock</h1>
+            <h1 className='text-[28px]'>DiamondRock</h1>
             <div className='flex gap-8 max-md:hidden'>
                 <div className='flex items-center gap-2'>
                     <MdHome />
@@ -37,9 +37,8 @@ const Header = () => {
                 </div>
             </div>
         </div>
-        <div className='flex flex-col absolute right-0 left-0 top-[50%] w-full  justify-center items-center gap-2'>
-            <h1 className='text-5xl text-center font-semibold max'>Hi! I&apos;m Adejare Muibi</h1>
-            <h1 className='text-5xl text-center font-semibold'>A Frontend Developer</h1>
+        <div className='flex absolute right-0 left-0 top-[50%] w-full justify-center items-center gap-2'>
+            <h1 className='text-5xl text-center font-semibold max-md:text-3xl w-[40vw] max-md:w-[80vw] leading-[63px]'>Hi! I&apos;m Adejare Muibi A Frontend Developer</h1>
         </div>  
     </div>
   )
