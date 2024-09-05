@@ -167,7 +167,7 @@ const About = () => {
             <div className='flex flex-col gap-3'>
               <p className='text-[14px]'>Barchelor of Arts|</p>
               <h1 className='text-[18px] font-semibold'>LINGUISTICS</h1>
-              <p className='text-[14px]'>University of Ilorin, Ilorin, Kwara State.</p>
+              <p className='text-[14px]'>University of Ilorin. Ilorin, Kwara State. Nigeria.</p>
             </div>
           </div>
         </div>

@@ -20,7 +20,7 @@ useEffect(() => {
     }, []);
 
   return (
-    <div className='flex flex-col justify-center items-center py-[30px] w-full max-md:overflow-x-hidden' data-aos="flip-right">
+    <div id='services' className='flex flex-col justify-center items-center py-[30px] w-full max-md:overflow-x-hidden' data-aos="flip-right">
         <div className='flex flex-col justify-center max-md:items-center gap-12'>
             <div>
                 <h1 className='font-bold text-[45px] text-white'>Services</h1>
@@ -38,7 +38,7 @@ useEffect(() => {
                         <div className='text-[45px] text-[#96BB7C] group-hover:bg-[#96BB7C] group-hover:text-white group-hover:text-[30px] group-hover:p-[14px] rounded-[100px] transition-colors duration-[1s]'><MdOutlineWebAsset /></div>
                         <div className='flex flex-col items-center gap-7'>
                             <h1 className='font-semibold text-[20px]'>Web Design</h1>
-                            <p className='w-[23vw] text-center text-[15px] max-md:w-[70vw]'>web design refers to the design of websites that are displayed on the internet.</p>
+                            <p className='w-[23vw] text-center text-[15px] max-md:w-[70vw]'>Web design refers to the design of websites that are displayed on the internet.</p>
                         </div>
                     </div>
                     <div className='flex group flex-col items-center border-[0.2px] border-[#4e4d4d] px-[17px] py-[25px] gap-10 rounded-[10px] bg-[#222222]'>
@@ -54,7 +54,7 @@ useEffect(() => {
                         <div className='text-[45px] text-[#96BB7C] group-hover:bg-[#96BB7C] group-hover:text-white group-hover:text-[30px] group-hover:p-[14px] rounded-[100px] transition-colors duration-[1s]'><CgSoftwareDownload /></div>
                         <div className='flex flex-col items-center gap-7'>
                             <h1 className='font-semibold text-[20px]'>Software development</h1>
-                            <p className='w-[23vw] text-center text-[15px] max-md:w-[70vw]'>software development is the process of conceiving, designing, programming, testing and maintaining applications</p>
+                            <p className='w-[23vw] text-center text-[15px] max-md:w-[70vw]'>Software development is the process of conceiving, designing, programming, testing and maintaining applications</p>
                         </div>
                     </div>
                     <div className='flex group flex-col items-center border-[0.2px] border-[#4e4d4d] px-[17px] py-[25px] gap-10 rounded-[10px] bg-[#222222]'>
@@ -68,7 +68,7 @@ useEffect(() => {
                         <div className='text-[45px] text-[#96BB7C] group-hover:bg-[#96BB7C] group-hover:text-white group-hover:text-[30px] group-hover:p-[14px] rounded-[100px] transition-colors duration-[1s]'><TbSpeakerphone /></div>
                         <div className='flex flex-col items-center gap-7'>
                             <h1 className='font-semibold text-[20px]'>Web hosting and Maintenance</h1>
-                            <p className='w-[23vw] text-center text-[15px] max-md:w-[70vw]'>hosting services provide the ability to launch your site on the internet Maintenance ensures that all your data and code is up to date</p>
+                            <p className='w-[23vw] text-center text-[15px] max-md:w-[70vw]'>Hosting services provide the ability to launch your site on the internet Maintenance ensures that all your data and code is up to date</p>
                         </div>
                     </div>
                 </div>   

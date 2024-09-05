@@ -12,7 +12,7 @@ const Contact = () => {
         AOS.init({ duration: 3000});
         }, []);
   return (
-    <div className='text-white flex flex-col w-full justify-center items-center gap-20 py-[30px] max-md:overflow-x-hidden' data-aos="zoom-in">
+    <div id='contact' className='text-white flex flex-col w-full justify-center items-center gap-20 py-[30px] max-md:overflow-x-hidden' data-aos="zoom-in">
         <div className='gap-12 flex flex-col max-md:items-center'>
         <div className='text-[45px] font-bold'>
             <h1>Contact Me</h1>

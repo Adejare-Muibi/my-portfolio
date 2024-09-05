@@ -1,3 +1,4 @@
+'use client';
 import React from 'react'
 import Link from 'next/link';
 import { MdHome } from "react-icons/md";
@@ -5,40 +6,94 @@ import { FaList } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
 import { IoBagHandleSharp } from "react-icons/io5";
 import { TiMessages } from "react-icons/ti";
+import {BsThreeDotsVertical} from 'react-icons/bs';
+import {IoCloseSharp} from 'react-icons/io5';
+import { useState } from 'react';
 
 const Header = () => {
+
+    const [click, setClick] = useState(false);
+    function handleClick() {
+		setClick(!click);
+	}
+
+
+
+
   return (
-    <div className='flex gap-60 justify-center text-white max-md: h-[100vh] flex-col bg-[url("/photo2.jpg")] bg-cover bg-no-repeat'>
+    <div className='flex gap-60 justify-center text-white max-md:h-[100vh] flex-col bg-[url("/photo2.jpg")] bg-cover bg-no-repeat'>
         <div className='bg-black bg-opacity-50 h-[100vh]'></div>
-        <div className='flex bg-black fixed z-10 w-full top-0 justify-around max-md:flex-col max-md:items-center max-md:justify-center pt-2'>
-            <h1 className='text-[28px]'>DiamondRock</h1>
-            <div className='flex gap-8 max-md:hidden'>
-                <div className='flex items-center gap-2'>
-                    <MdHome />
-                    <h2>Home</h2>
+        <div className='flex bg-black fixed z-10 w-full top-0 lg:justify-between lg:px-9 max-md:flex-col max-md:items-center max-md:justify-center pt-2'>
+            <h1 className='text-[28px] flex max-md:items-center max-md:w-[100%] max-md:justify-between max-md:px-3'>DiamondRock <span className="md:hidden cursor-pointer text-[23px]" onClick={handleClick}>{click ? <IoCloseSharp /> : <BsThreeDotsVertical />} </span></h1>
+            {click && (
+                <div className='flex gap-2 pt-10 pb-3 lg:hidden'>
+                    <div className='flex items-center gap-1'>
+                        <Link href={'#home'} className='flex items-center gap-1 hover:text-[#96BB7C] transition-colors duration-[0.7s]'>
+                            <MdHome className='text-[10px]' />
+                            <h2>Home</h2>
+                        </Link>
+                    </div>
+                    <div className='flex items-center gap-1'>
+                        <Link href={'#about'} className='flex items-center gap-1 hover:text-[#96BB7C] transition-colors duration-[0.7s]'>
+                            <FaUser className='text-[10px]' />
+                            <h2>About</h2>
+                        </Link>
+                    </div>
+                    <div className='flex items-center gap-1'>
+                        <Link href={'#services'} className='flex items-center gap-1 hover:text-[#96BB7C] transition-colors duration-[0.7s]'>
+                            <FaList className='text-[10px]' />
+                            <h2>Services</h2>
+                        </Link>
+                    </div>
+                    <div className='flex items-center gap-1'>
+                        <Link href={'#portfolio'} className='flex items-center gap-1 hover:text-[#96BB7C] transition-colors duration-[0.7s]'>
+                            <IoBagHandleSharp className='text-[10px]' />
+                            <h2>Portfolio</h2>
+                        </Link>
+                    </div>
+                    <div className='flex items-center gap-1'>
+                        <Link href={'#contact'} className='flex items-center gap-1 hover:text-[#96BB7C] transition-colors duration-[0.7s]'>
+                            <TiMessages className='text-[10px]' />
+                            <h2>Contact</h2>
+                        </Link>
+                    </div>  
                 </div>
-                <div className='flex items-center gap-2'>
-                    <Link href={'#about'} className='flex items-center gap-2'>
-                        <FaUser className='text-[10px]' />
+            )} 
+            <div className='flex gap-8 max-md:flex-col max-md:hidden'>
+                <div className='flex items-center gap-1'>
+                    <Link href={'#home'} className='flex items-center gap-2 hover:text-[#96BB7C] transition-colors duration-[0.7s]'>
+                        <MdHome className='text-[13px]' />
+                        <h2>Home</h2>
+                    </Link>
+                </div>
+                <div className='flex items-center gap-1'>
+                    <Link href={'#about'} className='flex items-center gap-2 hover:text-[#96BB7C] transition-colors duration-[0.7s]'>
+                        <FaUser className='text-[13px]' />
                         <h2>About</h2>
                     </Link>
                 </div>
-                <div className='flex items-center gap-2'>
-                    <FaList className='text-[13px]' />
-                    <h2>Services</h2>
+                <div className='flex items-center gap-1'>
+                    <Link href={'#services'} className='flex items-center gap-2 hover:text-[#96BB7C] transition-colors duration-[0.7s]'>
+                        <FaList className='text-[13px]' />
+                        <h2>Services</h2>
+                    </Link>
                 </div>
-                <div className='flex items-center gap-2'>
-                    <IoBagHandleSharp />
-                    <h2>Portfolio</h2>
+                <div className='flex items-center gap-1'>
+                    <Link href={'#portfolio'} className='flex items-center gap-2 hover:text-[#96BB7C] transition-colors duration-[0.7s]'>
+                        <IoBagHandleSharp className='text-[13px]' />
+                        <h2>Portfolio</h2>
+                    </Link>
                 </div>
-                <div className='flex items-center gap-2'>
-                    <TiMessages />
-                    <h2>Contact</h2>
-                </div>
-            </div>
+                <div className='flex items-center gap-1'>
+                    <Link href={'#contact'} className='flex items-center gap-2 hover:text-[#96BB7C] transition-colors duration-[0.7s]'>
+                        <TiMessages className='text-[13px]' />
+                        <h2>Contact</h2>
+                    </Link>
+                </div>  
+            </div>  
         </div>
         <div className='flex absolute right-0 left-0 top-[50%] w-full justify-center items-center gap-2'>
-            <h1 className='text-5xl text-center font-semibold max-md:text-3xl w-[40vw] max-md:w-[80vw] leading-[63px]'>Hi! I&apos;m Adejare Muibi A Frontend Developer</h1>
+            <h1 className='text-5xl text-center font-semibold max-md:text-3xl w-[38vw] max-md:w-[75vw] leading-[63px]'>Hi! I&apos;m Adejare Muibi A Frontend Developer</h1>
         </div>  
     </div>
   )

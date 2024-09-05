@@ -6,7 +6,7 @@ import { IoLogoGithub } from "react-icons/io";
 
 const Portfolio = () => {
   return (
-    <div className='text-white flex flex-col justify-center items-center py-[30px]'>
+    <div id='portfolio' className='text-white flex flex-col justify-center items-center py-[30px]'>
       <div className='flex flex-col gap-12'>
       <div>
         <h1 className='text-[45px] font-bold'>Portfolio</h1>
