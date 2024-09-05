@@ -6,7 +6,7 @@ import { FaList } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
 import { IoBagHandleSharp } from "react-icons/io5";
 import { TiMessages } from "react-icons/ti";
-import {BsThreeDotsVertical} from 'react-icons/bs';
+import { GiHamburgerMenu } from "react-icons/gi";
 import {IoCloseSharp} from 'react-icons/io5';
 import { useState } from 'react';
 
@@ -24,7 +24,7 @@ const Header = () => {
     <div className='flex gap-60 justify-center text-white max-md:h-[100vh] flex-col bg-[url("/photo2.jpg")] bg-cover bg-no-repeat'>
         <div className='bg-black bg-opacity-50 h-[100vh]'></div>
         <div className='flex bg-black fixed z-10 w-full top-0 lg:justify-between lg:px-9 max-md:flex-col max-md:items-center max-md:justify-center pt-2'>
-            <h1 className='text-[28px] flex max-md:items-center max-md:w-[100%] max-md:justify-between max-md:px-3'>DiamondRock <span className="md:hidden cursor-pointer text-[23px]" onClick={handleClick}>{click ? <IoCloseSharp /> : <BsThreeDotsVertical />} </span></h1>
+            <h1 className='text-[28px] max-md:text-[25px] flex max-md:items-center max-md:w-[100%] max-md:justify-between max-md:px-3'>DiamondRock <span className="md:hidden cursor-pointer text-[23px]" onClick={handleClick}>{click ? <IoCloseSharp /> : <GiHamburgerMenu className='text-[19px]' />} </span></h1>
             {click && (
                 <div className='flex gap-2 pt-10 pb-3 lg:hidden'>
                     <div className='flex items-center gap-1'>
