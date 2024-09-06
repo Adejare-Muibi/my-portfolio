@@ -26,7 +26,7 @@ const About = () => {
   return (
     <div  id='about' className='flex bg-[#222222] flex-col gap-24 max-md:gap-[30px] justify-center items-center text-white w-[100%] max-md:overflow-x-hidden'>
       <div className='flex justify-around bg-[#2b2929] py-[50px] max-md:gap-[50px] max-md:justify-center items-center max-md:flex-col w-full max-md:overflow-x-hidden' data-aos="fade-up">
-      <div className='flex flex-col gap-4'>
+        <div className='flex flex-col gap-4'>
           <div className='flex flex-col gap-5 max-md:items-center'>
             <h1 className='text-[45px] font-bold'>About Me</h1>
             <h2 className='w-[40vw] max-md:w-[84vw]'>
@@ -59,7 +59,7 @@ const About = () => {
             </div>
             <div className='py-[5px] flex gap-[10px] max-md:flex-col'>
               <div className='flex items-center bg-[#96BB7C] max-md:justify-center hover:bg-white hover:text-[#96BB7C] rounded-[7px] py-2 px-6 max-md:px-28'>
-                <Link href={'#hire'}>HIRE ME</Link>
+                <Link href={'#contact'}>HIRE ME</Link>
               </div>
               <div className='flex items-center hover:bg-white hover:text-[#6C757D] bg-[#6C757D] rounded-[7px] py-2 px-6 max-md:justify-center max-md:px-28'>
                 <a href="/myCV.pdf" download="myCV.pdf">DOWNLOAD CV</a>
@@ -71,7 +71,7 @@ const About = () => {
           <Image className='rounded-[10px]' src={"/convo.jpg"} height={50} width={300} alt='me' />
         </div>
       </div>
-      <div className='flex max-md:flex-col max-md:gap-6 justify-around items-center w-[100%] max-md:overflow-x-hidden'>
+      <div className='flex max-md:flex-col max-md:gap-6 justify-around items-center w-[100%] max-md:overflow-x-hidden' data-aos="fade-up">
         <div className='flex lg:gap-[150px] gap-[12px]'>
           <div className='flex gap-5 flex-col'>
             <div className='flex gap-3 border-b-[0.5px] pb-[7px] items-center border-[#363434]'>
