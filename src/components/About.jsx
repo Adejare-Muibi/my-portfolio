@@ -71,36 +71,38 @@ const About = () => {
           <Image className='rounded-[10px]' src={"/convo.jpg"} height={50} width={300} alt='me' />
         </div>
       </div>
-      <div className='flex gap-5 max-md:flex-col justify-center max-md:items-center max-md:overflow-x-hidden' data-aos="fade-left">
-        <div className='flex gap-5 flex-col'>
-          <div className='flex gap-3 border-b-[0.5px] pb-[7px] items-center border-[#363434]'>
-            <h1 className=''><span className='font-semibold text-[20px]'>Stack :</span> <span className='ml-1 text-[13px]'>Frontend</span></h1>
+      <div className='flex max-md:flex-col max-md:gap-6 justify-around items-center w-[100%] max-md:overflow-x-hidden'>
+        <div className='flex lg:gap-[150px] gap-[12px]'>
+          <div className='flex gap-5 flex-col'>
+            <div className='flex gap-3 border-b-[0.5px] pb-[7px] items-center border-[#363434]'>
+              <h1 className=''><span className='font-semibold text-[20px]'>Stack :</span> <span className='ml-1 text-[13px]'>Frontend</span></h1>
+            </div>
+            <div className='flex gap-3 border-b-[0.5px] pb-[7px] items-center border-[#363434]'>
+              <h1 className='max-md:w-[20vw]'><span className='font-semibold text-[20px]'>Email :</span> <span className='ml-1 text-[13px]'>adejaremuibi96@gmail.com</span></h1>
+            </div>
+            <div className='flex gap-3 border-b-[0.5px] pb-[7px] items-center border-[#363434]'>
+              <h1 className=''><span className='font-semibold text-[20px]'>Phone :</span> <span className='ml-1 text-[13px] max-md:w-[6vw]'><Link className='text-[#96BB7C]' href={'https://wa.me/2348102780804'}>+2348102780804</Link></span></h1>
+            </div>
+            <div className='flex gap-3 border-b-[0.5px] pb-[7px] items-center border-[#363434]'>
+              <h1 className=''><span className='font-semibold text-[20px]'>Freelance :</span> <span className='ml-1 text-[13px]'></span>Available</h1>
+            </div>
           </div>
-          <div className='flex gap-3 border-b-[0.5px] pb-[7px] items-center border-[#363434]'>
-            <h1 className=''><span className='font-semibold text-[20px]'>Email :</span> <span className='ml-1 text-[13px]'>adejaremuibi96@gmail.com</span></h1>
-          </div>
-          <div className='flex gap-3 border-b-[0.5px] pb-[7px] items-center border-[#363434]'>
-            <h1 className=''><span className='font-semibold text-[20px]'>Phone :</span> <span className='ml-1 text-[13px] max-md:w-[6vw]'><Link className='text-[#96BB7C]' href={'https://wa.me/2348102780804'}>https://wa.me/2348102780804</Link></span></h1>
-          </div>
-          <div className='flex gap-3 border-b-[0.5px] pb-[7px] items-center border-[#363434]'>
-            <h1 className=''><span className='font-semibold text-[20px]'>Freelance :</span> <span className='ml-1 text-[13px]'></span>Available</h1>
+          <div className='flex gap-5 flex-col'>
+            <div className='flex gap-3 border-b-[0.5px] pb-[7px] items-center border-[#363434]'>
+              <h1 className=''><span className='font-semibold text-[20px]'>Github :</span> <span className='ml-1 text-[13px]'><Link className='text-[#96BB7C]' href={'https://github.com/adejare-muibi'}>github.com</Link></span></h1>
+            </div>
+            <div className='flex gap-3 border-b-[0.5px] pb-[7px] items-center border-[#363434]'>
+              <h1 className='max-md:w-[20vw]'><span className='font-semibold'>Linkdin :</span> <span className='ml-1 text-[13px]'><Link className='text-[#96BB7C]' href={'https://www.linkedin.com/in/adejare-muibi-4462191b0/'}>linkedin.com</Link></span></h1>
+            </div>
+            <div className='flex gap-3 border-b-[0.5px] pb-[7px] items-center border-[#363434]'>
+              <h1 className=''><span className='font-semibold text-[20px]'>Location :</span> <span className='ml-1 text-[13px]'>Everywhere</span></h1>
+            </div>
+            <div className='flex gap-3 border-b-[0.5px] pb-[7px] items-center border-[#363434]'>
+              <h1 className=''><span className='font-semibold text-[20px]'>Twitter :</span> <span className='ml-1 text-[13px]'><Link className='text-[#96BB7C]' href={'https://x.com/tweetofjumuah'}>@TweetOfJumuah</Link></span></h1>
+            </div>
           </div>
         </div>
-        <div className='flex gap-5 flex-col'>
-          <div className='flex gap-3 border-b-[0.5px] pb-[7px] items-center border-[#363434]'>
-            <h1 className=''><span className='font-semibold text-[20px]'>Github :</span> <span className='ml-1 text-[13px]'><Link className='text-[#96BB7C]' href={'https://github.com/adejare-muibi'}>https://github.com/muibi-adejare</Link></span></h1>
-          </div>
-          <div className='flex gap-3 border-b-[0.5px] pb-[7px] items-center border-[#363434]'>
-            <h1 className='max-md:w-[20vw]'><span className='font-semibold'>Linkdin :</span> <span className='ml-1 text-[13px]'><Link className='text-[#96BB7C]' href={'https://www.linkedin.com/in/adejare-muibi-4462191b0/'}>https://www.linkedin.com/in/adejare-muibi-4462191b0/</Link></span></h1>
-          </div>
-          <div className='flex gap-3 border-b-[0.5px] pb-[7px] items-center border-[#363434]'>
-            <h1 className=''><span className='font-semibold text-[20px]'>Location :</span> <span className='ml-1 text-[13px]'>Everywhere</span></h1>
-          </div>
-          <div className='flex gap-3 border-b-[0.5px] pb-[7px] items-center border-[#363434]'>
-            <h1 className=''><span className='font-semibold text-[20px]'>Twitter :</span> <span className='ml-1 text-[13px]'><Link className='text-[#96BB7C]' href={'https://x.com/tweetofjumuah'}>https://x.com/tweetofjumuah?</Link></span></h1>
-          </div>
-        </div>
-        <div className='flex flex-col gap-5 text-[13px] max-md:items-center'>
+        <div className='flex flex-col gap-5 text-[13px] max-md:pr-[68px]'>
           <div>
             <h1>Programming Languages: Javascrpit/Typescript, Java</h1>
           </div>
