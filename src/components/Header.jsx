@@ -93,7 +93,7 @@ const Header = () => {
             </div>  
         </div>
         <div className='flex absolute right-0 left-0 top-[50%] w-full justify-center items-center gap-2'>
-            <h1 className='text-5xl text-center font-semibold max-md:text-3xl w-[38vw] max-md:w-[75vw] leading-[63px]'>Hi! I&apos;m Adejare Muibi A Frontend Developer</h1>
+            <h1 className='text-5xl text-center font-semibold max-md:text-3xl w-[38vw] max-md:w-[80vw] leading-[63px]'>Hi! I&apos;m Adejare Muibi A Frontend Developer</h1>
         </div>  
     </div>
   )

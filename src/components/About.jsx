@@ -102,7 +102,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className='flex flex-col gap-5 text-[13px] max-md:pr-[48px]'>
+        <div className='flex flex-col gap-5 text-[13px] max-md:pr-[45px]'>
           <div>
             <h1>Programming Languages: Javascrpit/Typescript, Java</h1>
           </div>
