@@ -17,9 +17,6 @@ const Header = () => {
 		setClick(!click);
 	}
 
-
-
-
   return (
     <div className='flex gap-60 justify-center text-white max-md:h-[100vh] flex-col bg-[url("/photo2.jpg")] bg-cover bg-no-repeat'>
         <div className='bg-black bg-opacity-50 h-[100vh]'></div>

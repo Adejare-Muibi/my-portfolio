@@ -19,6 +19,11 @@
 body {
  background-color: black;
 }
+html {
+  scroll-behavior: smooth;
+}
+
+
 /* .cust tr, td{
   border: 1px solid red;
   padding: 8px;

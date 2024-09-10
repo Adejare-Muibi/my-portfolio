@@ -5,8 +5,8 @@ import ProgressBar from './Progress';
 import Link from 'next/link';
 import AOS from "aos";
 import "aos/dist/aos.css";
-
-
+import { FaArrowUp } from "react-icons/fa";
+import  BackToTop from "../components/BackToTop";
 
 
 const About = () => {
@@ -21,7 +21,8 @@ const About = () => {
   useEffect(() => {
     AOS.init({ duration: 3000});
     }, []);
-  
+
+   
 
   return (
     <div  id='about' className='flex bg-[#222222] flex-col gap-24 max-md:gap-[30px] justify-center items-center text-white w-[100%] max-md:overflow-x-hidden'>
@@ -174,7 +175,7 @@ const About = () => {
           </div>
         </div>
       </div>
-
+      <BackToTop />
     </div>
   )
 }

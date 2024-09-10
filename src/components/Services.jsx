@@ -12,12 +12,10 @@ import "aos/dist/aos.css";
 
 
 
-
-const Services = () => {
-
-useEffect(() => {
-    AOS.init({ duration: 3000});
-    }, []);
+const Services = (target, duration) => {
+    useEffect(() => {
+        AOS.init({ duration: 3000});
+        }, []);
 
   return (
     <div id='services' className='flex flex-col justify-center items-center py-[30px] w-full max-md:overflow-x-hidden' data-aos="flip-right">
