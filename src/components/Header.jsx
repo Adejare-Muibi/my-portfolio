@@ -20,7 +20,7 @@ const Header = () => {
   return (
     <div className='flex gap-60 justify-center text-white max-md:h-[100vh] flex-col bg-[url("/photo2.jpg")] bg-cover bg-no-repeat'>
         <div className='bg-black bg-opacity-50 h-[100vh]'></div>
-        <div className='flex bg-black fixed z-10 w-full top-0 lg:justify-between lg:px-9 max-md:flex-col max-md:items-center max-md:justify-center pt-2'>
+        <div className='flex bg-black fixed z-10 w-full top-0 lg:justify-between lg:px-9 max-md:flex-col max-md:items-center max-md:justify-center py-3 max-md:py-1'>
             <h1 className='text-[28px] max-md:text-[25px] flex max-md:items-center max-md:w-[100%] max-md:justify-between max-md:px-3'>DiamondRock <span className="md:hidden cursor-pointer text-[23px]" onClick={handleClick}>{click ? <IoCloseSharp /> : <GiHamburgerMenu className='text-[19px]' />} </span></h1>
             {click && (
                 <div className='flex gap-2 pt-10 pb-3 lg:hidden'>
@@ -87,6 +87,9 @@ const Header = () => {
                         <h2>Contact</h2>
                     </Link>
                 </div>  
+                <div className='flex items-center hover:bg-white border-white border-[1.5px] max-md:justify-center hover:text-[#96BB7C] rounded-[5px] py-2 px-11 max-md:px-28'>
+                    <Link href={'#contact'} className='font-semibold'>HIRE ME</Link>
+                </div>
             </div>  
         </div>
         <div className='flex flex-col absolute right-0 left-0 top-[50%] w-full justify-center items-center gap-2'>
