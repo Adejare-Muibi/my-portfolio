@@ -29,7 +29,7 @@ const About = () => {
         <div className='flex flex-col gap-4'>
           <div className='flex flex-col gap-5 max-md:items-center'>
             <h1 className='text-[45px] font-bold'>About Me</h1>
-            <h2 className='w-[40vw] max-md:w-[84vw]'>
+            <h2 className='w-[40vw] max-md:w-[85vw] max-md:text-center'>
               I&apos;m an ambitious, enthutiastic and passionate Frontend Developer with a love for creating responsive, user-friendly interfaces. With a year experience in the field, I&apos;ve honed my skills in HTML, CSS,
               JavaScript, React and Next. I&apos;m always excited to collaborate on projects that challenge me and allow me to grow as a developer. Let&apos;s connect and explore opportunities to work together.
             </h2>
@@ -102,7 +102,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className='flex flex-col gap-5 text-[13px] max-md:pr-[45px]'>
+        <div className='flex flex-col gap-5 text-[13px] max-md:pr-[72px]'>
           <div>
             <h1>Programming Languages: Javascrpit/Typescript</h1>
           </div>
