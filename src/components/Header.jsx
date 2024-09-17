@@ -20,10 +20,10 @@ const Header = () => {
   return (
     <div className='flex gap-60 justify-center text-white max-md:h-[100vh] flex-col bg-[url("/photo2.jpg")] bg-cover bg-no-repeat'>
         <div className='bg-black bg-opacity-50 h-[100vh]'></div>
-        <div className='flex bg-black fixed z-10 w-full top-0 lg:justify-between lg:px-9 max-md:flex-col max-md:items-center max-md:justify-center py-3 max-md:py-1'>
-            <h1 className='text-[28px] max-md:text-[25px] flex max-md:items-center max-md:w-[100%] max-md:justify-between max-md:px-3'>DiamondRock <span className="md:hidden cursor-pointer text-[23px]" onClick={handleClick}>{click ? <IoCloseSharp /> : <GiHamburgerMenu className='text-[19px]' />} </span></h1>
-            {click && (
-                <div className='flex gap-2 pt-10 pb-3 lg:hidden'>
+        <div className='flex bg-black fixed z-10 w-full top-0 lg:justify-between lg:px-9 max-md:flex-col max-md:items-center max-md:justify-center py-3 max-md:py-0'>
+            <h1 className='text-[28px] max-md:text-[25px] flex max-md:items-center max-md:w-[100%] max-md:justify-between max-md:px-3 max-md:py-2'>DiamondRock <span className="md:hidden cursor-pointer text-[23px]" onClick={handleClick}>{click ? <IoCloseSharp /> : <GiHamburgerMenu className='text-[19px]' />} </span></h1>
+            <div className={`transition-all duration-500 ease-in-out lg:hidden overflow-hidden flex flex-col w-full items-center justify-center bg-[#222222] gap-7 ${click ? 'max-h-[500px] py-7 overflow-hidden duration-[2000ms]' : 'max-h-0 opacity-0'}`}>
+                <div className='flex flex-col items-center gap-4 lg:hidden'>
                     <div className='flex items-center gap-1'>
                         <Link href={'#home'} className='flex items-center gap-1 hover:text-[#96BB7C] transition-colors duration-[0.7s]'>
                             <MdHome className='text-[10px]' />
@@ -55,7 +55,11 @@ const Header = () => {
                         </Link>
                     </div>  
                 </div>
-            )} 
+                <div className='flex items-center hover:bg-white border-white border-[1.5px] max-md:justify-center hover:text-[#96BB7C] rounded-[5px] py-2 px-6'>
+                    <Link href={'#contact'} className='font-semibold'>HIRE ME</Link>
+                </div>
+            </div>
+            
             <div className='flex gap-8 max-md:flex-col max-md:hidden'>
                 <div className='flex items-center gap-1'>
                     <Link href={'#home'} className='flex items-center gap-2 hover:text-[#96BB7C] transition-colors duration-[0.7s]'>
@@ -87,7 +91,7 @@ const Header = () => {
                         <h2>Contact</h2>
                     </Link>
                 </div>  
-                <div className='flex items-center hover:bg-white border-white border-[1.5px] max-md:justify-center hover:text-[#96BB7C] rounded-[5px] py-2 px-11 max-md:px-28'>
+                <div className='flex items-center hover:bg-white border-white border-[1.5px] max-md:justify-center hover:text-[#96BB7C] rounded-[5px] py-2 px-11'>
                     <Link href={'#contact'} className='font-semibold'>HIRE ME</Link>
                 </div>
             </div>  

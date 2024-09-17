@@ -7,6 +7,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { FaArrowUp } from "react-icons/fa";
 import  BackToTop from "../components/BackToTop";
+import WhatsAppButton from '../components/WhatsAppButton';
 
 
 const About = () => {
@@ -73,7 +74,7 @@ const About = () => {
         </div>
       </div>
       <div className='flex max-md:flex-col max-md:gap-6 justify-around items-center w-[100%] max-md:overflow-x-hidden' data-aos="fade-up">
-        <div className='flex lg:gap-[150px] gap-[12px]'>
+        <div className='flex lg:gap-[170px] gap-[12px]'>
           <div className='flex gap-5 flex-col'>
             <div className='flex gap-3 border-b-[0.5px] pb-[7px] items-center border-[#363434]'>
               <h1 className=''><span className='font-semibold text-[20px] max-md:text-[16px]'>Stack :</span> <span className='ml-1 text-[13px]'>Frontend</span></h1>
@@ -105,7 +106,7 @@ const About = () => {
         </div>
         <div className='flex flex-col gap-5 text-[13px] max-md:pr-[45px]'>
           <div>
-            <h1>Programming Languages: Javascrpit/Typescript, Java</h1>
+            <h1>Programming Languages: Javascrpit/Typescript</h1>
           </div>
           <div>
             <h1>Markup/Styling: Html,CSS, Tailwind</h1>
@@ -175,7 +176,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <BackToTop />
+      <BackToTop /> <WhatsAppButton />
     </div>
   )
 }

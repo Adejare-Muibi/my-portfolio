@@ -23,9 +23,14 @@ module.exports = {
           '40%': { transform: 'translateY(-30px)' },
           '60%': { transform: 'translateY(-15px)' },
         },
+        fade: {
+          '0%, 100%': { opacity: 1 },  // Fully visible
+          '50%': { opacity: 0.5 },     // Half faded
+        },
       },
       animation: {
-        'bounce-in': 'bounceIn 1.5s ease-in-out', // 1s bounce effect
+        'bounce-in': 'bounceIn 1.5s ease-in-out', // Bounce effect
+        'fade': 'fade 2s ease-in-out infinite',   // Fade effect
       },
     },
   },
