@@ -23,8 +23,6 @@ const About = () => {
     AOS.init({ duration: 3000});
     }, []);
 
-   
-
   return (
     <div  id='about' className='flex bg-[#222222] flex-col gap-24 max-md:gap-[30px] justify-center items-center text-white w-[100%] max-md:overflow-x-hidden'>
       <div className='flex justify-around bg-[#2b2929] py-[50px] max-md:gap-[50px] max-md:justify-center items-center max-md:flex-col w-full max-md:overflow-x-hidden' data-aos="fade-up">
@@ -32,7 +30,7 @@ const About = () => {
           <div className='flex flex-col gap-5 max-md:items-center'>
             <h1 className='text-[45px] font-bold'>About Me</h1>
             <h2 className='w-[40vw] max-md:w-[84vw]'>
-              I&apos;m an ambitious, enthutiastic and passionate website developer with a love for creating responsive, user-friendly interfaces. With a year experience in the field, I&apos;ve honed my skills in HTML, CSS,
+              I&apos;m an ambitious, enthutiastic and passionate Frontend Developer with a love for creating responsive, user-friendly interfaces. With a year experience in the field, I&apos;ve honed my skills in HTML, CSS,
               JavaScript, React and Next. I&apos;m always excited to collaborate on projects that challenge me and allow me to grow as a developer. Let&apos;s connect and explore opportunities to work together.
             </h2>
           </div>

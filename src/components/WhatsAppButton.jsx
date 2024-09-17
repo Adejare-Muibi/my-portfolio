@@ -9,7 +9,7 @@ const WhatsAppButton = () => {
       rel="noopener noreferrer"
       className="fixed bottom-5 left-5 text-white p-4 rounded-full shadow-lg z-50 animate-fade"
 >
-  <Image width={40} height={100} src={"/social.png"} alt="WhatsApp Logo" />
+  {/* <Image width={40} height={100} src={"/social.png"} alt="WhatsApp Logo" /> */}
 </Link>
 
 
