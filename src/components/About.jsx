@@ -11,12 +11,11 @@ import WhatsAppButton from '../components/WhatsAppButton';
 
 
 const About = () => {
-  const [progress, setProgress] = useState(80); // Example percentage value
-  const [progress2, setProgress2] = useState(85); // Example percentage value
-  const [progress3, setProgress3] = useState(60); // Example percentage value
-  const [progress4, setProgress4] = useState(50); // Example percentage value
-  const [progress5, setProgress5] = useState(40); // Example percentage value
-  const [progress1, setProgress1] = useState(50); // Example percentage value
+  const [progress, setProgress] = useState(93); // Example percentage value
+  const [progress2, setProgress2] = useState(92); // Example percentage value
+  const [progress3, setProgress3] = useState(80); // Example percentage value
+  const [progress4, setProgress4] = useState(75); // Example percentage value
+  const [progress1, setProgress1] = useState(75); // Example percentage value
   const [color, setColor] = useState('#96BB7C');
   
   useEffect(() => {
@@ -29,7 +28,7 @@ const About = () => {
         <div className='flex flex-col gap-4'>
           <div className='flex flex-col gap-5 max-md:items-center'>
             <h1 className='text-[45px] font-bold'>About Me</h1>
-            <h2 className='w-[40vw] max-md:w-[85vw] max-md:text-center'>
+            <h2 className='w-[40vw] max-md:w-[86vw]'>
               I&apos;m an ambitious, enthutiastic and passionate Frontend Developer with a love for creating responsive, user-friendly interfaces. With a year experience in the field, I&apos;ve honed my skills in HTML, CSS,
               JavaScript, React and Next. I&apos;m always excited to collaborate on projects that challenge me and allow me to grow as a developer. Let&apos;s connect and explore opportunities to work together.
             </h2>
