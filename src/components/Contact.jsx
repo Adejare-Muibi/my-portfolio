@@ -1,4 +1,6 @@
 "use client"
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import {React, useEffect} from 'react'
 import { IoCall } from "react-icons/io5";
 import { FaLocationDot } from "react-icons/fa6";
@@ -6,8 +8,37 @@ import { MdEmail } from "react-icons/md";
 import { TbWorldWww } from "react-icons/tb";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useState } from 'react';
 
 const Contact = () => {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [subject, setSubject] = useState('');
+  const [message, setMessage] = useState('');
+  const [loading, setLoading] = useState(false);
+
+  async function fetchApi(e) {
+    e.preventDefault();
+    const baseurl = 'https://forms-io.onrender.com/submit-form/fa7acc2b-1f65-4cae-a57d-5d4e4c1b4656';
+    if (!name || !email || !message || !subject) {
+        return toast.warn('Fill out the empty space');
+    }
+    setLoading(true);
+    try {
+        const responds = await fetch(baseurl, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ name, email, subject, message })
+        }).then((res) => res.json());
+        if (responds) {
+            toast.success('Message submitted successfully');
+            setLoading(false);
+        }
+    } catch (error) {
+        toast.error('Error submitting message. Please try again.');
+        }
+   }
+
     useEffect(() => {
         AOS.init({ duration: 3000});
         }, []);
@@ -55,6 +86,24 @@ const Contact = () => {
           <p className="font-bold text-[16px]">I&apos;M VERY RESPONSIVE TO MESSAGES</p>
         </div>
         <form 
+          className="flex flex-col w-full justify-center gap-7">
+          <div className="flex gap-[30px] max-md:flex-col max-md:gap-7 w-full">
+            <input required type="text" name="fullName" placeholder="Name" className="bg-[#222222] w-full py-[14px] pl-[12px] rounded-[10px] outline-none" value={name} onChange={(e) => setName(e.target.value)} />
+            <input required type="Email" name="email" placeholder="Email" className="bg-[#222222] w-full py-[14px] pl-[12px] rounded-[10px] outline-none" value={email} onChange={(e) => setEmail(e.target.value)} />
+          </div> 
+          <div className="flex w-full">
+            <input required type="text" name="subject" placeholder="Subject" className="bg-[#222222] w-full py-[14px] pl-[12px] rounded-[10px] outline-none" value={subject} onChange={(e) => setSubject(e.target.value)} />
+          </div>
+          <div className="flex w-full">
+            <textarea name="message" required placeholder="Message" rows={7} className="bg-[#222222] pt-[10px] w-full outline-none pl-[12px] rounded-[10px]" value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
+          </div>
+          <div className="flex">
+            <button type="submit" className="bg-[#96BB7C] rounded-[10px] w-[30%] max-md:w-[60%] py-[14px]" onClick={fetchApi}>
+                    {loading ? 'Sending...' : 'Send Message'}
+            </button>
+          </div>
+        </form>    
+        {/* <form 
           action="https://forms-io.onrender.com/submit-form/fa7acc2b-1f65-4cae-a57d-5d4e4c1b4656"
           method="POST"
           className="flex flex-col w-full justify-center gap-7">
@@ -71,9 +120,10 @@ const Contact = () => {
           <div className="flex">
             <button type="submit" className="bg-[#96BB7C] rounded-[10px] w-[30%] max-md:w-[60%] py-[14px]">Send Message</button>
           </div>
-        </form>    
+        </form>     */}
       </div>   
     </div>
+    <ToastContainer/>
   </div>
   
   )
