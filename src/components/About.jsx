@@ -103,7 +103,7 @@ const About = () => {
         </div>
         <div className='flex flex-col gap-5 text-[13px] max-md:pr-[72px]'>
           <div>
-            <h1>Programming Languages: Javascrpit/Typescript</h1>
+            <h1>Programming Languages: Javascript/Typescript</h1>
           </div>
           <div>
             <h1>Markup/Styling: Html,CSS, Tailwind</h1>
