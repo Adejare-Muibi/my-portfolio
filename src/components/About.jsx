@@ -24,7 +24,7 @@ const About = () => {
 
   return (
     <div  id='about' className='flex bg-[#222222] flex-col gap-24 max-md:gap-[30px] justify-center items-center text-white w-[100%] max-md:overflow-x-hidden'>
-      <div className='flex justify-around bg-[#2b2929] py-[50px] max-md:gap-[50px] max-md:justify-center items-center max-md:flex-col w-full max-md:overflow-x-hidden' data-aos="fade-up">
+      <div className='flex justify-around bg-[#2b2929] py-[50px] max-md:gap-[50px] max-md:justify-center items-center max-md:flex-col w-full max-md:overflow-x-hidden' data-aos="zoom-in">
         <div className='flex flex-col gap-4'>
           <div className='flex flex-col gap-5 max-md:items-center'>
             <h1 className='text-[45px] font-bold'>About Me</h1>
@@ -122,7 +122,7 @@ const About = () => {
           </div>
         </div> 
       </div>
-      <div className='w-full flex gap-4 justify-center max-md:items-center max-md:flex-col mb-14 max-md:overflow-x-hidden' data-aos="slide-right">
+      <div className='w-full flex gap-4 justify-center max-md:items-center max-md:flex-col mb-14 max-md:overflow-x-hidden' data-aos="zoom-in">
         <div className='flex flex-col gap-7 max-md:justify-center'>
           <div>
             <h1 className='text-[25px] font-semibold'>Experience</h1>

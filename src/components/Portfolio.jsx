@@ -57,16 +57,16 @@ const portfolioItems = [
   },
   {
     id: 2,
-    title: "Project Two",
-    description: "A customized portfolio of a software Developer showcasing their profiles and experiences i n the feild.",
+    title: "Tosh Portfolio",
+    description: "A customized portfolio of a software Developer showcasing their profiles and experiences in their field and passion for creating exceptionaldigital experiences.",
     imgSrc: "/tosh.png",
     liveLink: "https://tosh-portfolio.vercel.app/",
     githubLink: "https://github.com/Adejare-Muibi/Tosh-portfolio"
   },
   {
     id: 3,
-    title: "Project Three",
-    description: "Description for the third project. Customize as needed.",
+    title: "MustyWorld",
+    description: "An ultimate digital marketplace where innovation meets opportunity. It connects buyers and sellers from around the world, offering a very vast array of digital products.",
     imgSrc: "/musty.png",
     liveLink: "https://musty-world.vercel.app/",
     githubLink: "https://github.com/Adejare-Muibi/MustyWorld"
@@ -75,12 +75,12 @@ const portfolioItems = [
 
 const Portfolio = () => {
   return (
-    <div id='portfolio' className='text-white flex flex-col justify-center items-center py-[30px]'>
-      <div className='flex flex-col gap-12'>
+    <div id='portfolio' className='text-white flex flex-col justify-center items-center py-[30px]' data-aos="zoom-in">
+      <div className='flex flex-col gap-12 max-md:items-center'>
         <div>
           <h1 className='text-[45px] font-bold'>Portfolio</h1>
         </div>
-        <div className='flex gap-7 justify-center'>
+        <div className='flex gap-7 justify-center max-md:flex-col'>
           {portfolioItems.map((item) => (
             <div key={item.id} className='flex flex-col gap-3 bg-[#222222] rounded-[10px] p-2 w-[30vw] max-md:w-[80vw]'>
               <div className='flex flex-col gap-2'>
